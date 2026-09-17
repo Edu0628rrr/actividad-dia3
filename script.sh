@@ -20,5 +20,7 @@ do
     cantidad=$(grep -o "$palabra" "$archivo" | wc -l)
 
     echo "Archivo: $archivo"
-    echo "Veces: $cantidad"
+    echo "Veces: $cantidadecho "Archivo encontrado: $archivo"
+echo "Frecuencia: $cantidad"
+echo "--------------------""
 done
