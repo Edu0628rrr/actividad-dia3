@@ -15,7 +15,7 @@ then
     exit
 fi
 
-grep -rl "$palabra" "$ruta" | while read archivo
+grep -ril "$palabra" "$ruta" | while read archivo
 do
     cantidad=$(grep -o "$palabra" "$archivo" | wc -l)
 
