@@ -17,10 +17,9 @@ fi
 
 grep -ril "$palabra" "$ruta" | while read archivo
 do
-    cantidad=$(grep -o "$palabra" "$archivo" | wc -l)
+    cantidad=$(grep -oi "$palabra" "$archivo" | wc -l)
 
     echo "Archivo: $archivo"
-    echo "Veces: $cantidadecho "Archivo encontrado: $archivo"
-echo "Frecuencia: $cantidad"
-echo "--------------------""
+    echo "Frecuencia: $cantidad"
+    echo "--------------------"
 done
